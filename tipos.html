@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Bicicleta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .bike-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .bike {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .bike img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .bike p {
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tipos de Bicicleta</h1>
+        <div class="bike-types">
+            <div class="bike">
+                <img src="mountain-bike.jpg" alt="Mountain Bike">
+                <p>Mountain Bike</p>
+            </div>
+            <div class="bike">
+                <img src="road-bike.jpg" alt="Road Bike">
+                <p>Road Bike</p>
+            </div>
+            <div class="bike">
+                <img src="city-bike.jpg" alt="City Bike">
+                <p>City Bike</p>
+            </div>
+            <div class="bike">
+                <img src="bmx-bike.jpg" alt="BMX Bike">
+                <p>BMX Bike</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
