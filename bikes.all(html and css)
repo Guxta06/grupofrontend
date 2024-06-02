@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de Bicicletas | BikeShop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: #211818; /* cor de fundo geral */
+      color: #fff; /* cor do texto */
+    }
+
+    .header-bg {
+      background: #352e2e; /* cor de fundo do cabeçalho */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-bg img {
+      width: 150px;
+    }
+
+    nav {
+      background: #352e2e; /* cor de fundo do menu de navegação */
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      color: #ccc;
+    }
+
+    .titulo-bg {
+      background: #2c2525; /* cor de fundo do título */
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .bicicletas div {
+      background: #4e4747; /* cor de fundo dos contêineres de bicicletas */
+      margin: 10px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .bicicletas button,
+    .bicicletas a {
+      background: #352e2e; /* cor do botão */
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 1em;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .bicicletas button:hover,
+    .bicicletas a:hover {
+      background: #271f1f; /* cor de fundo do botão quando hover */
+    }
+
+    .cart-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .cart-icon i {
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: red;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+
+<body id="bicicletas">
+  <header class="header-bg">
+    <!-- Logo -->
+    <img src="file:///C:/Users/Lucas/Downloads/teste/ESTD%202018%20(1).svg" alt="Logo">
+    <!-- Menu de navegação -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Bicicletas</a>
+      <a href="#">Acessórios</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <h1>Nossas Bicicletas</h1>
+      <p>Escolha a melhor bicicleta para você</p>
+    </div>
+
+    <div class="bicicletas">
+      <div>
+        <h2>BMX</h2>
+        <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/nebula.jpg" alt="BMX">
+        <p>Projetada para manobras radicais e truques de rua, esta BMX é a escolha dos pilotos urbanos e de parques de skate. Com um quadro resistente e ágil, rodas pequenas e robustas, pneus de alto desempenho e uma geometria compacta, esta bicicleta oferece controle preciso e agilidade para fazer manobras perigosas</p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: Variável</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: Variável</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: Nenhuma</span>
+        </div>
+        <span>R$ 1999</span>
+        <button onclick="addToCart('BMX', 1999)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div>
+        <h2>City Bike</h2>
+        <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/magic.jpg" alt="City Bike">
+        <p>Ideal para deslocamentos diários e passeios pela cidade, esta city bike combina estilo, conforto e praticidade. Com um quadro resistente e ergonômico, pneus largos para uma condução suave e estável, e acessórios úteis como para-lamas e bagageiro traseiro, você pode enfrentar o trânsito urbano com facilidade e estilo.
+
+        </p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: 25 km/h</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: 15 kg</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: 7</span>
+        </div>
+        <span>R$ 1299</span>
+        <button onclick="addToCart('City Bike', 1299)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div>
+        <h2>Road Bike</h2>
+        <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/nimbus.jpg" alt="Road Bike">
+        <p>Seja para competição ou passeios de longa distância, esta bicicleta de estrada oferece desempenho aerodinâmico e eficiência de pedalada. Com um quadro leve e rígido, geometria agressiva, pneus finos de alta pressão e componentes de alta qualidade, você pode voar pelas estradas com velocidade e conforto:Ideal para competições.</p>
+            <div class="specs">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Velocidade: 40 km/h</span>
+            <i class="fas fa-bicycle"></i>
+            <span>Peso: 10 kg</span>
+            <i class="fas fa-cogs"></i>
+            <span>Marchas: 18</span>
+            </div>
+            <span>R$ 2499</span>
+            <button onclick="addToCart('Road Bike', 2499)">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <h2>Mountain Bike</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPMq3sQ4JfHER4HEhwoFht86VvexvB1Zy-Q&s" alt="Mountain Bike">
+                <p>Explore trilhas desafiadoras e terrenos irregulares com confiança nesta mountain bike robusta. Equipada com suspensão dianteira para absorver solavancos, pneus largos de alta tração e uma geometria projetada para lidar com subidas íngremes e descidas emocionantes e uma geometria incrivel para lidar com situações desafiadoras
+
+                </p>
+                <div class="specs">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>Velocidade: Variável</span>
+                  <i class="fas fa-bicycle"></i>
+                  <span>Peso: Variável</span>
+                  <i class="fas fa-cogs"></i>
+                  <span>Marchas: 21</span>
+                </div>
+                <span>R$ 1799</span>
+                <button onclick="addToCart('Mountain Bike', 1799)">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+              </main>
+              <a href="#" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-count">0</div>
+              </a>
+              <script>
+                const cartItems = document.getElementById('cart-items');
+                const cartTotal = document.getElementById('cart-total');
+                let total = 0;
+            
+                function addToCart(name, price) {
+                  const li = document.createElement('li');
+                  li.textContent = `${name} - R$ ${price}`;
+                  const span = document.createElement('span');
+                  span.textContent = 'X';
+                  span.onclick = () => removeFromCart(li, price);
+                  li.appendChild(span);
+                  cartItems.appendChild(li);
+                  updateTotal(price);
+                }
+            
+                function removeFromCart(item, price) {
+                  cartItems.removeChild(item);
+                  updateTotal(-price);
+                }
+            
+                function updateTotal(amount) {
+                  total += amount;
+                  cartTotal.textContent = total;
+                  document.querySelector('.cart-count').textContent = cartItems.childElementCount;
+                }
+            
+                function checkout() {
+                  alert(`Compra finalizada! Total: R$ ${total}`);
+                  cartItems.innerHTML = '';
+                  cartTotal.textContent = '0';
+                  total = 0;
+                }
+              </script>
+            </body>
+            </html>
+        
+
+
