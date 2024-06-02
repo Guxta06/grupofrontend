@@ -1,4 +1,3 @@
-
 body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -42,18 +41,40 @@ body {
       text-align: center;
     }
 
+    .bicicletas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
     .bicicletas div {
+      flex: 0 0 calc(33.33% - 20px); /* ajusta o tamanho das colunas */
       background: #4e4747; /* cor de fundo dos contêineres de bicicletas */
-      margin: 10px;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
       text-align: center;
     }
 
-    .bicicletas button,
-    .bicicletas a {
+    .bicicletas img {
+      width: 100%;
+      height: auto;
+    }
+
+    .specs {
+      margin-top: 10px;
+    }
+
+    .specs i {
+      margin-right: 5px;
+    }
+
+    .specs span {
+      margin-right: 10px;
+    }
+
+    .bicicletas button {
       background: #352e2e; /* cor do botão */
       color: #fff;
       border: none;
@@ -67,8 +88,7 @@ body {
       margin-top: 10px;
     }
 
-    .bicicletas button:hover,
-    .bicicletas a:hover {
+    .bicicletas button:hover {
       background: #271f1f; /* cor de fundo do botão quando hover */
     }
 
@@ -106,35 +126,3 @@ body {
       align-items: center;
       font-size: 0.8em;
     }
-const cartItems = document.getElementById('cart-items');
-                const cartTotal = document.getElementById('cart-total');
-                let total = 0;
-            
-                function addToCart(name, price) {
-                  const li = document.createElement('li');
-                  li.textContent = `${name} - R$ ${price}`;
-                  const span = document.createElement('span');
-                  span.textContent = 'X';
-                  span.onclick = () => removeFromCart(li, price);
-                  li.appendChild(span);
-                  cartItems.appendChild(li);
-                  updateTotal(price);
-                }
-            
-                function removeFromCart(item, price) {
-                  cartItems.removeChild(item);
-                  updateTotal(-price);
-                }
-            
-                function updateTotal(amount) {
-                  total += amount;
-                  cartTotal.textContent = total;
-                  document.querySelector('.cart-count').textContent = cartItems.childElementCount;
-                }
-            
-                function checkout() {
-                  alert(`Compra finalizada! Total: R$ ${total}`);
-                  cartItems.innerHTML = '';
-                  cartTotal.textContent = '0';
-                  total = 0;
-                }
