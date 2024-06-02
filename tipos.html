@@ -1,74 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de Bicicleta</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .bike-types {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            justify-content: center;
-        }
-        .bike {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .bike img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .bike p {
-            margin-top: 10px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Tipos de Bicicleta</h1>
-        <div class="bike-types">
-            <div class="bike">
-                <img src="mountain-bike.jpg" alt="Mountain Bike">
-                <p>Mountain Bike</p>
-            </div>
-            <div class="bike">
-                <img src="road-bike.jpg" alt="Road Bike">
-                <p>Road Bike</p>
-            </div>
-            <div class="bike">
-                <img src="city-bike.jpg" alt="City Bike">
-                <p>City Bike</p>
-            </div>
-            <div class="bike">
-                <img src="bmx-bike.jpg" alt="BMX Bike">
-                <p>BMX Bike</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tipos de Bicicleta</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header id="logo">
+        <div class="logo">
+            <a href="index.html"><img src="images/ESTD 2018 (1).svg" alt="bikesearch" height="80px"></a>
+            
+            <nav id="nav">
+                <ul>
+                    <li class="nav">
+                        <a href="#">Início</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#">Tipos de bike</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+    </header>
+    <main>
+        <body>
+            <div id="card">
+            <div class="card">
+                
+                <h2>Navegação</h2>
+                <li><a href="#logo" class="topo">Voltar ao topo</a></li>
+                    <li><a href="#bpu"> City bike</a></li>
+                    <li><a href="#be">E-bike</a></li>
+                    <li><a href="#rb">Road bike</a></li>
+                    <li><a href="#bt">Bicicleta de Triathlon</a></li>
+                    <li><a href="#ss">Single speed</a></li>
+                    <li><a href="#fx">Fixa</a></li>
+                    <li><a href="#sor">Speed ou Road</a></li>
+                    <li><a href="#ttb">Time trial bike</a></li>
+                    <li><a href="#dobravel">Dobrável</a></li>
+                    <li><a href="#cargo">Cargo</a></li>
+                    <li><a href="#br">Bike reclinada</a></li>
+                    <li><a href="#dutch">Dutch</a></li>
+                    <li><a href="#comfort">Comfort</a></li>
+                    <li><a href="#bc">Beach cruiser</a></li>
+                    <li><a href="#hm">Hardtail mountain</a></li>
+                    <li><a href="#fsm">Full suspension mountain</a></li>
+                    <li><a href="#frm">Full rigid mountain</a></li>
+                    <li><a href="#trng">Touring</a></li>
+                    <li><a href="#cc">Cyclocross</a></li>
+                    <li><a href="#mv">Mini velo</a></li>
+                    <li><a href="#bmx">BMX</a></li>
             </div>
         </div>
-    </div>
-</body>
+            <article>
+                <h1>Quais são os diferentes tipos de bikes?</h1>
+                <img src="images/img1.jpg" alt="homem" height="500px" class="img1">
+                <p>Se você está pensando em comprar uma bicicleta nova, é normal ficar um pouco perdido diante da ampla variedade de opções disponíveis no mercado. Cada tipo de bicicleta foi projetado para atender a diferentes necessidades e atividades, o que pode tornar a escolha ainda mais desafiadora. É aí que entra o nosso time humanizado da Semexe, pronto para fazer toda a diferença e te ajudar na decisão!
+
+                    Seja você um iniciante curioso ou um entusiasta experiente, queremos tornar sua busca mais fácil. Por isso, selecionamos alguns dos principais tipos de bicicletas, para que você não se sinta mais perdido:</p>
+                    <li class="li" id="bpu"><h1>Híbrida / Gravel</h1>
+                        <img src="images/img3.jpg" alt="" height="400px" style="margin-top: 20px;">
+                        <p>É um cruzamento entre uma bicicleta de montanha e uma bike de estrada. Oferece uma boa variedade de opções de engrenagens e freio. Rápida e leve, ela pode se aplicar muito bem a qualquer ciclista, mas não chega a ser excepcional para nenhum estilo de pilotagem específico.</p>
+                    </li>
+                    <li class="li" id="be">
+                        <h1>Bicicleta Elétrica (E-bike):</h1>
+                        <img src="images/img4.webp" alt="" height="400px">
+                        <p>Equipada com um motor elétrico que auxilia o ciclista durante o pedal. Pode ser encontrada em diferentes estilos, como mountain bike elétrica, bicicleta de cidade elétrica, entre outros.</p>
+                    </li>
+                    <li class="li" id="rb">
+                       
+                        <h1>Bicicleta de Estrada (Road Bike):</h1>
+                        <img src="images/estrada.avif" alt="" height="400px">
+                         <p>Projetada para velocidade e eficiência em estradas pavimentadas. Possui guidão curvado para a frente, pneus finos e quadro leve.</p>
+                        <img src="" alt="">
+                    </li>
+                    <li class="li" id="bt">
+                        <h1>Bicicleta de Triathlon:</h1>
+                        <img src="images/triathlon.webp" alt="" height="400px"> 
+                        <p>Especialmente projetada para competições de triatlo, possui um design aerodinâmico, com foco em alta velocidade e eficiência nas três disciplinas do esporte: natação, ciclismo e corrida.</p>
+                        <img src="" alt="">
+                        
+                    </li>
+                    <li class="li" id="ss">
+                        <h1>Single Speed</h1>
+                        <img src="images/singlespeed.jpg" alt="" height="400px"> 
+                        <p>Por ter somente uma marcha, você talvez tenha dificuldade nas subidas e deslize em terrenos planos. Mesmo assim, é simples e leve para correr, oferecendo uma pedalada mais prazerosa. Por ter menos peças, é também mais barata e exige menos manutenção, o que faz com que seja ótima para uso diário.</p>
+                        <img src="" alt="">
+                        
+                    </li>
+                    <li class="li" id="fx">
+                        <h1>Fixa</h1>
+                        <img src="images/Fixie-bike.jpg" alt="" height="400px"> 
+                        <p>Bicicletas de pinhão fixo, fixed gear ou simplesmente fixas, têm uma catraca que gira em conjunto com a roda traseira. Essas bikes são bastante simples, o que faz com que praticamente não exijam manutenção. Afinal, elas são de marcha única e não possuem freios.</p>
+                        
+                        
+                    </li>
+                    <li class="li" id="sor">
+                        <h1>Speed ou Road</h1>
+                        <img src="images/Road-bike.jpg" alt="" height="400px"> 
+                        <p>Uma bicicleta com pneus finos e opções de marchas projetadas para o asfalto. Ela é leve e rápida, sendo eficiente na estrada e capaz de lidar bem com subidas.</p>
+                    
+                        
+                    </li>
+                    <li class="li" id="ttb">
+                        <h1>Time trial bike</h1>
+                        <img src="images/Time-trial-bike.jpg" alt="" height="400px"> 
+                        <p>É similar às road bikes, mas com uma geometria mais agressiva. Sua principal vantagem é ser muito leve e rápida, sendo feita para que você possa viajar o mais rápido possível. Além disso, é uma bike mais específica, o que faz com que se torne muito cara.</p>
+                    </li>
+                    <li class="li" id="dobravel">
+                        <h1>Dobrável</h1>
+                        <img src="images/dobravel.jpg" alt="" height="400px"> 
+                        <p>Mais prática, elas se dobram para facilitar seu armazenamento e transporte, já que pode ser levada no metrô, ônibus ou em táxis. Além disso, tem aceleração mais rápida graças às suas rodas menores. Não são muito eficientes para longas distâncias e as boas bicicletas dobráveis tendem a ser caras.</p>
+                    </li>
+                    <li class="li" id="cargo">
+                        <h1>Cargo</h1>
+                        <img src="images/Cargo-bike.jpg" alt="" height="400px"> 
+                        <p>Pesadas e grandes, essas bikes foram feitas para carregar grandes quantidades de coisas. Por essa razão, pode ser boa para quem precisa transportar objetos ou mesmo levar as crianças para a escola.</p>
+                    </li>
+                    <li class="li" id="br">
+                        <h1>Bicicleta reclinada</h1>
+                        <img src="images/recumbent-bike.jpg" alt="" height="400px"> 
+                        <p>Nessa bike você se senta em uma cadeira e a altura do chão é variável. Isso faz com que seja mais confortável para andar e melhor para pessoas com dificuldades de locomoção ou problemas na coluna. Pode ser um pouco ruim para trânsitos com muitas paradas e as mais baixas são perigosas para uso em estradas.</p>
+                    </li>
+                    <li class="li" id="dutch">
+                        <h1>Dutch</h1>
+                        <img src="images/dutch.jpg" alt="" height="400px"> 
+                        <p>Mais comum nas cidades europeias, essa bicicleta permite que você ande nela utilizando qualquer roupa e é de baixa manutenção. Por isso mesmo, é confortável para pedaladas casuais. Porém, é mais pesada, o que irá diminuir o ritmo do passeio.</p>
+                    </li>
+                    <li class="li" id="comfort">
+                        <h1>Comfort</h1>
+                        <img src="images/Comfort-bike.jpg" alt="" height="400px"> 
+                        <p>Vertical como uma bike dutch, ela também pode ser montada com qualquer roupa, mas é boa também para subir ladeiras. Porém, é pesada e exige muita manutenção, além de não oferecer uma boa velocidade.</p>
+                    </li>
+                    <li class="li" id="bc">
+                        <h1>Beach Cruiser</h1>
+                        <img src="images/Cruiser-bike.jpg" alt="" height="400px"> 
+                        <p>Ótima para ciclismo casual e de fácil manutenção, essa bike geralmente é de velocidade única. Por ter rodas grandes, não é boa para pedalar no asfalto.</p>
+                    </li>
+                    <li class="li" id="hm">
+                        <h1>Hardtail Mountain</h1>
+                        <img src="images/hardtail-MTB.jpg" alt="" height="400px"> 
+                        <p>Uma bicicleta de montanha com pneus grossos e bons freios. A suspensão dianteira auxilia a transpor buracos pelo caminho. Sua engrenagem e freios estão preparados para qualquer coisa, mas seu pneu não é eficiente em terrenos planos.</p>
+                    </li>
+                    <li class="li" id="fsm">
+                        <h1>Full Suspension Mountain</h1>
+                        <img src="images/Full-sus-MTB.jpg" alt="" height="400px"> 
+                        <p>Uma bicicleta com suspensão em ambas as rodas e pneus grandes. Tende a ter um bom feio e é bastante confortável em terrenos acidentados, apesar de ser pouco eficiente no asfalto.</p>
+                    </li>
+                    <li class="li" id="frm">
+                        <h1>Fully Rigid Mountain</h1>
+                        <img src="images/rigid-MTB.jpg" alt="" height="400px"> 
+                        <p>Uma bicicleta de montanha com garfos fixos, um quadro robusto e pneus grossos, sendo boa também para a cidade. Boas engrenagens e freios significam que você pode cobrir longas distâncias com facilidade, mas há a necessidade de usar pneus mais finos no asfalto.</p>
+                    </li>
+                    <li class="li" id="trng">
+                        <h1>Touring</h1>
+                        <img src="images/Touring-bike.jpg" alt="" height="400px"> 
+                        <p>Bicicletas robustas com bom suporte para terrenos esburacados. A posição de pilotagem é bastante confortável para longas distâncias, mas tendem a ser bikes mais pesadas.</p>
+                    </li>
+                    
+                    <li class="li" id="cc">
+                        <h1>Cyclocross</h1>
+                        <img src="images/Cyclocross-bike.jpg" alt="" height="400px"> 
+                        <p>Como uma bicicleta de estrada, mas com folga para pneus mais largos e um quadro mais robusto. Bons freios facilitam passeios na cidade, mas seus pneus podem não ser bons no asfalto.</p>
+                    </li>
+                    <li class="li" id="mv">
+                        <h1>Mini Velo</h1>
+                        <img src="images/Mini-velo.jpg" alt="" height="400px"> 
+                        <p>Normalmente com rodas menores, estas bikes podem ser construídas a partir de uma variedade de tipos de bicicletas, como as Road, Hybrid, etc… As rodas menores permitem mais aceleração, mas perdem velocidade em trechos longos. São também mais fáceis de armazenar.</p>
+                    </li>
+                    <li class="li" id="bmx">
+                        <h1>BMX</h1>
+                        <img src="images/bmx.jpg" alt="" height="400px"> 
+                        <p>Boa e resistente para a realização de manobras, elas geralmente não têm freios. São leves e muito pequenas, sendo fáceis de armazenar, mas não são recomendadas para passeios maiores.</p>
+                    </li>
+                <div>
+                    <h1></h1>
+                </div>
+            </article>
+        </body>
+    </main>
+    <footer></footer>
 </html>
