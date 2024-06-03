@@ -6,19 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Venda de Bicicletas | BikeShop</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-/head>
+  <link rel="stylesheet" href="css/bikes.css">
+  <link rel="stylesheet" href="css/style.min2.css">
+  <style>
+    
+  </style>
+</head>
 
 <body id="bicicletas">
   <header class="header-bg">
-    <!-- Logo -->
-    <img src="file:///C:/Users/Lucas/Downloads/teste/ESTD%202018%20(1).svg" alt="Logo">
-    <!-- Menu de navegação -->
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Bicicletas</a>
-      <a href="#">Acessórios</a>
-      <a href="#">Contato</a>
-    </nav>
+    <div class="header container">
+      <a href="./">
+        <img src="images/ESTD 2018 (1).svg" alt="Bikcraft" width="100px">
+      </a>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu font-1-m cor-0">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a href="./tipos.html">Tipos de Bicicleta</a></li>
+            <li><a href="./orçamento.html">Orçamento</a></li>
+            <li><a href="./bikes.html">Nossa Coleção</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -66,76 +77,87 @@
         <h2>Road Bike</h2>
         <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/nimbus.jpg" alt="Road Bike">
         <p>Seja para competição ou passeios de longa distância, esta bicicleta de estrada oferece desempenho aerodinâmico e eficiência de pedalada. Com um quadro leve e rígido, geometria agressiva, pneus finos de alta pressão e componentes de alta qualidade, você pode voar pelas estradas com velocidade e conforto:Ideal para competições.</p>
-            <div class="specs">
-            <i class="fas fa-tachometer-alt"></i>
-            <span>Velocidade: 40 km/h</span>
-            <i class="fas fa-bicycle"></i>
-            <span>Peso: 10 kg</span>
-            <i class="fas fa-cogs"></i>
-            <span>Marchas: 18</span>
-            </div>
-            <span>R$ 2499</span>
-            <button onclick="addToCart('Road Bike', 2499)">Adicionar ao Carrinho</button>
-            </div>
-            <div>
-                <h2>Mountain Bike</h2>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPMq3sQ4JfHER4HEhwoFht86VvexvB1Zy-Q&s" alt="Mountain Bike">
-                <p>Explore trilhas desafiadoras e terrenos irregulares com confiança nesta mountain bike robusta. Equipada com suspensão dianteira para absorver solavancos, pneus largos de alta tração e uma geometria projetada para lidar com subidas íngremes e descidas emocionantes e uma geometria incrivel para lidar com situações desafiadoras
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: 40 km/h</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: 10 kg</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: 18</span>
+        </div>
+        <span>R$ 2499</span>
+        <button onclick="addToCart('Road Bike', 2499)">Adicionar ao Carrinho</button>
+      </div>
 
-                </p>
-                <div class="specs">
-                  <i class="fas fa-tachometer-alt"></i>
-                  <span>Velocidade: Variável</span>
-                  <i class="fas fa-bicycle"></i>
-                  <span>Peso: Variável</span>
-                  <i class="fas fa-cogs"></i>
-                  <span>Marchas: 21</span>
-                </div>
-                <span>R$ 1799</span>
-                <button onclick="addToCart('Mountain Bike', 1799)">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-              </main>
-              <a href="#" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <div class="cart-count">0</div>
-              </a>
-              <script>
-                const cartItems = document.getElementById('cart-items');
-                const cartTotal = document.getElementById('cart-total');
-                let total = 0;
-            
-                function addToCart(name, price) {
-                  const li = document.createElement('li');
-                  li.textContent = `${name} - R$ ${price}`;
-                  const span = document.createElement('span');
-                  span.textContent = 'X';
-                  span.onclick = () => removeFromCart(li, price);
-                  li.appendChild(span);
-                  cartItems.appendChild(li);
-                  updateTotal(price);
-                }
-            
-                function removeFromCart(item, price) {
-                  cartItems.removeChild(item);
-                  updateTotal(-price);
-                }
-            
-                function updateTotal(amount) {
-                  total += amount;
-                  cartTotal.textContent = total;
-                  document.querySelector('.cart-count').textContent = cartItems.childElementCount;
-                }
-            
-                function checkout() {
-                  alert(`Compra finalizada! Total: R$ ${total}`);
-                  cartItems.innerHTML = '';
-                  cartTotal.textContent = '0';
-                  total = 0;
-                }
-              </script>
-            </body>
-            </html>
-        
+      <div>
+        <h2>Mountain Bike</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPMq3sQ4JfHER4HEhwoFht86VvexvB1Zy-Q&s" alt="Mountain Bike">
+        <p>Explore trilhas desafiadoras e terrenos irregulares com confiança nesta mountain bike robusta. Equipada com suspensão dianteira para absorver solavancos, pneus largos de alta tração e uma geometria projetada para lidar com subidas íngremes e descidas emocionantes e uma geometria incrível para lidar com situações desafiadoras.
 
+        </p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: Variável</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: Variável</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: 21</span>
+        </div>
+        <span>R$ 1799</span>
+        <button onclick="addToCart('Mountain Bike', 1799)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="images/ESTD 2018 (1).svg" alt="Bikesearch">
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-0">Contato</h3>
+        <ul class="font-2-m cor-5">
+          <li><a href="tel:+5521999999999">+55 21 99999-9999</a></li>
+          <li><a href="mailto:bikesearch@gmail.com">bikesearch@gmail.com</a></li>
+          <li>Rua Ali Perto, 42 - Botafogo</li>
+          <li>Brasília - DF</li>
+        </ul>
+        <div class="footer-redes">
+          <a href="https://www.instagram.com/frnds._lima?igsh=MWk4MWp4cjZmZThtYQ==">
+            <img src="images/instagram.png" alt="Instagram" width="50">
+          </a>
+          <a href="https://www.facebook.com/?locale=pt_BR">
+            <img src="images/facebook.png" alt="Facebook" width="50">
+          </a>
+          
+        </div>
+      </div>
+      
+      <p class="footer-copy font-2-m cor-6">BikeSearch © Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <a href="orçamento.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <div class="cart-count">0</div>
+  </a>
 
+  <script>
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    let total = 0;
+
+    
+
+    function removeFromCart(item, price) {
+      cartItems.removeChild(item);
+      updateTotal(-price);
+    }
+
+    function updateTotal(amount) {
+      total += amount;
+      cartTotal.textContent = total;
+      document.querySelector('.cart-count').textContent = cartItems.childElementCount;
+    }
+
+  
+  </script>
+</body>
+
+</html>
