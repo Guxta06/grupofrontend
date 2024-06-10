@@ -96,7 +96,7 @@ img [src$=".jpg"]{
     line-height: 1.6;
     margin-bottom: 30px;
     text-align: justify;
-    margin-left: 300px;
+    margin-left: 280px;
   }
 
   .team-section {
@@ -268,10 +268,10 @@ img [src$=".jpg"]{
 	justify-content: center;
 	text-align: justify;
     align-content:start;
-    position: fixed; left: 1200px;
+    position: fixed; left: 1000px;
 }
 .card a:hover{
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.5s;
     
 }
