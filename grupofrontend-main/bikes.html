@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de Bicicletas | BikeShop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.min3.css">
+  <style>
+    
+  </style>
+</head>
+
+<body id="bicicletas">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img src="images/ESTD 2018 (1).svg" alt="Bikcraft" width="100px">
+      </a>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu font-1-m cor-0">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a href="./tipos.html">Tipos de Bicicleta</a></li>
+            <li><a href="./orçamento.html">Orçamento</a></li>
+            <li><a href="./bikes.html">Nossa Coleção</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <h1>Nossas Bicicletas</h1>
+      <p>Escolha a melhor bicicleta para você</p>
+    </div>
+
+    <div class="bicicletas">
+      <div>
+        <h2>BMX</h2>
+        <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/nebula.jpg" alt="BMX">
+        <p>Projetada para manobras radicais e truques de rua, esta BMX é a escolha dos pilotos urbanos e de parques de skate. Com um quadro resistente e ágil, rodas pequenas e robustas, pneus de alto desempenho e uma geometria compacta, esta bicicleta oferece controle preciso e agilidade para fazer manobras perigosas</p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: Variável</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: Variável</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: Nenhuma</span>
+        </div>
+        <span>R$ 1999</span>
+        <button onclick="addToCart('BMX', 1999)"><a href="orçamento.html">Adicionar ao Carrinho</a></button>
+      </div>
+
+      <div>
+        <h2>City Bike</h2>
+        <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/magic.jpg" alt="City Bike">
+        <p>Ideal para deslocamentos diários e passeios pela cidade, esta city bike combina estilo, conforto e praticidade. Com um quadro resistente e ergonômico, pneus largos para uma condução suave e estável, e acessórios úteis como para-lamas e bagageiro traseiro, você pode enfrentar o trânsito urbano com facilidade e estilo.
+
+        </p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: 25 km/h</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: 15 kg</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: 7</span>
+        </div>
+        <span>R$ 1299</span>
+        <button onclick="addToCart('City Bike', 1299)"><a href="orçamento.html">Adicionar ao Carrinho</a></button>
+      </div>
+
+      <div>
+        <h2>Road Bike</h2>
+        <img src="https://bernardocostaa.github.io/bikecraft/img/bicicletas/nimbus.jpg" alt="Road Bike">
+        <p>Seja para competição ou passeios de longa distância, esta bicicleta de estrada oferece desempenho aerodinâmico e eficiência de pedalada. Com um quadro leve e rígido, geometria agressiva, pneus finos de alta pressão e componentes de alta qualidade, você pode voar pelas estradas com velocidade e conforto:Ideal para competições.</p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: 40 km/h</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: 10 kg</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: 18</span>
+        </div>
+        <span>R$ 2499</span>
+        <button onclick="addToCart('Road Bike', 2499)"><a href="orçamento.html">Adicionar ao Carrinho</a></button>
+      </div>
+
+      <div>
+        <h2>Mountain Bike</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPMq3sQ4JfHER4HEhwoFht86VvexvB1Zy-Q&s" alt="Mountain Bike">
+        <p>Explore trilhas desafiadoras e terrenos irregulares com confiança nesta mountain bike robusta. Equipada com suspensão dianteira para absorver solavancos, pneus largos de alta tração e uma geometria projetada para lidar com subidas íngremes e descidas emocionantes e uma geometria incrível para lidar com situações desafiadoras.
+
+        </p>
+        <div class="specs">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Velocidade: Variável</span>
+          <i class="fas fa-bicycle"></i>
+          <span>Peso: Variável</span>
+          <i class="fas fa-cogs"></i>
+          <span>Marchas: 21</span>
+        </div>
+        <span>R$ 1799</span>
+        <button onclick="addToCart('Mountain Bike', 1799)"><a href="orçamento.html">Adicionar ao Carrinho</a></button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="images/ESTD 2018 (1).svg" alt="Bikesearch">
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-0">Contato</h3>
+        <ul class="font-2-m cor-5">
+          <li><a href="tel:+5521999999999">+55 21 99999-9999</a></li>
+          <li><a href="mailto:bikesearch@gmail.com">bikesearch@gmail.com</a></li>
+          <li>Rua Ali Perto, 42 - Botafogo</li>
+          <li>Brasília - DF</li>
+        </ul>
+        <div class="footer-redes">
+          <a href="https://www.instagram.com/frnds._lima?igsh=MWk4MWp4cjZmZThtYQ==">
+            <img src="images/instagram.png" alt="Instagram" width="50">
+          </a>
+          <a href="https://www.facebook.com/?locale=pt_BR">
+            <img src="images/facebook.png" alt="Facebook" width="50">
+          </a>
+          
+        </div>
+      </div>
+      
+      <p class="footer-copy font-2-m cor-6">BikeSearch © Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <a href="orçamento.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <div class="cart-count">0</div>
+  </a>
+
+  <script>
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    let total = 0;
+
+    
+
+    function removeFromCart(item, price) {
+      cartItems.removeChild(item);
+      updateTotal(-price);
+    }
+
+    function updateTotal(amount) {
+      total += amount;
+      cartTotal.textContent = total;
+      document.querySelector('.cart-count').textContent = cartItems.childElementCount;
+    }
+
+  
+  </script>
+</body>
+
+</html>
